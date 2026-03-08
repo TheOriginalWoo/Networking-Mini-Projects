@@ -15,6 +15,7 @@ Note:
 3. Https proxy  
 4. Minimal Symmetric encryption client.
 5. Minimal RSA encryption client.
+6. Minimal RSA and Synchronus Encryption Client
   
 ### Echo Server 
 * supports multiple clients
@@ -40,3 +41,19 @@ Note:
 
 * Similer to the one above.
 * Also don't support messages beyond `BUFFER_SIZE`.
+* Uses `address details.json`.
+
+### Minimal RSA and Synchronus Encryption Client.
+
+* Establishes RSA encryption and then upgrade it to synchronous encryption for actual chatting.
+* other details are similar to the above
+
+## Findings
+
+### RSA Synchronous time differences
+
+
+|        |  RSA    |   Sync   |
+|--------|---------|----------|
+|encrypt | 0.4 ms  |  0.18 ms |  
+|decrypt | 13 ms   |  0.15 ms |
