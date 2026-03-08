@@ -1,0 +1,5 @@
+{
+  "your details": {"ip":  "127.0.0.1", "port": 22222},
+  "target details": {"ip":  "127.0.0.1", "port": 11111},
+  "key": "synchronous key here"
+}
